@@ -3,11 +3,8 @@ const cors = require('cors')
 const app = express()
 
 app.use(cors())
-const port = 3001
+const port = 3002
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
 app.use(express.static('public'))
 
 app.listen(port, () => {
